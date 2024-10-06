@@ -11,12 +11,12 @@ cat
 Redirect output using ">" after a command (e.g., ls) to create and save the output in a file. 
 Example: 
 ```sh
-ls -1h > file_list.txt
+ls -lh > file_list.txt
 ```
 Using “>>” appends output to an extising file(if it already exitsts),or create and write to a new file if it doesn’t exist.
 Example: 
 ```sh
-ls -1h ›› file list.txt
+ls -lh ›› file list.txt
 ```
 Redirect input from a file using “<”.
 Can mix “<“ and “>” together in a single line.
@@ -29,7 +29,7 @@ sort < words.txt > sorted words. txt
 Pipeline feeds output of previous command to input of next command.
 Example: 
 ```sh
-1s -1h | less
+1s -lh | less
 ```
 
 ## Expension
@@ -57,7 +57,7 @@ Example:
 sudo some_command
 ```
 
-##Text Editors
+## Text Editors
 | Name | Interface |
 | ------ | ------ |
 | vi, vim | Commandline |
@@ -66,13 +66,13 @@ sudo some_command
 | gedit | graphical |
 | kwrite | graphical |
 
-##wget
+## wget
 download files from the internet directly to your active directory.
 ```sh
 wget[URL]
 ```
 
-##curl
+## curl
 curl:fetching, uploading, and managing data over the Internet.
 ```sh
 curl[options][URL]
